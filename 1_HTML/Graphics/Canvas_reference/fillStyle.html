@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> fillStyle - Điền style phong cách vào đối tượng đồ họa  </title>
+</head>
+<body>
+	
+	<canvas id="myCanvas" height="150" width="300" style=" border : 1px solid #d3d3d3; "></canvas>
+	
+	<script type="text/javascript">
+		var c = document.getElementById("myCanvas"); // lay selector 
+		var ctx = c.getContext("2d");
+		ctx.fillStyle = "#FF0000"; // dien mau vao doi tuong selector 
+		ctx.fillRect(20, 20, 150, 150); // nhung vi tri se dien mau theo cau truc 
+	</script>
+</body>
+</html>

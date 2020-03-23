@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Canvas use Javascript </title>
+</head>
+<body style="margin: 50px ">
+	<p>
+		Các getContext()phương thức trả về một đối tượng mà cung cấp phương pháp và tài sản để vẽ trên vải.
+		<br>
+		Tham chiếu này sẽ bao gồm các thuộc tính và phương thức của getContext("2d") đối tượng, có thể được sử dụng để vẽ văn bản, dòng, hộp, vòng tròn, và nhiều hơn nữa - trên khung vẽ.
+	</p>
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+
+	<script>
+		var c = document.getElementById("myCanvas"); // Lấy selector là id myCanvas
+		var ctx = c.getContext("2d"); // lấy bối cảnh cho selector 
+		ctx.moveTo(0,0); // Di chuyển vị trí 
+		ctx.lineTo(200,100); // vẽ đến 
+		ctx.stroke(); // Xuất 
+	</script>
+
+</body>
+</html>
